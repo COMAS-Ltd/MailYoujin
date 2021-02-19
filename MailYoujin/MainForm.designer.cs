@@ -98,7 +98,8 @@
             this.InternalDomainListBox.Location = new System.Drawing.Point(10, 39);
             this.InternalDomainListBox.Name = "InternalDomainListBox";
             this.InternalDomainListBox.Size = new System.Drawing.Size(490, 100);
-            this.InternalDomainListBox.TabIndex = 6;
+            this.InternalDomainListBox.TabIndex = 99;
+            this.InternalDomainListBox.TabStop = false;
             // 
             // ExternalDomainBulkCheckBox
             // 
@@ -106,7 +107,7 @@
             this.ExternalDomainBulkCheckBox.Location = new System.Drawing.Point(13, 172);
             this.ExternalDomainBulkCheckBox.Name = "ExternalDomainBulkCheckBox";
             this.ExternalDomainBulkCheckBox.Size = new System.Drawing.Size(79, 16);
-            this.ExternalDomainBulkCheckBox.TabIndex = 5;
+            this.ExternalDomainBulkCheckBox.TabIndex = 1;
             this.ExternalDomainBulkCheckBox.Text = "一括チェック";
             this.ExternalDomainBulkCheckBox.UseVisualStyleBackColor = true;
             this.ExternalDomainBulkCheckBox.CheckedChanged += new System.EventHandler(this.ExternalDomainBulkCheckBox_CheckedChanged);
@@ -137,7 +138,7 @@
             this.ExternalDomainCheckBox.Location = new System.Drawing.Point(10, 193);
             this.ExternalDomainCheckBox.Name = "ExternalDomainCheckBox";
             this.ExternalDomainCheckBox.Size = new System.Drawing.Size(490, 102);
-            this.ExternalDomainCheckBox.TabIndex = 1;
+            this.ExternalDomainCheckBox.TabIndex = 2;
             this.ExternalDomainCheckBox.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.ExternalDomainCheckBox_ItemCheck);
             // 
             // AttachmentGroupBox
@@ -167,7 +168,7 @@
             this.AttachmentBulkCheckBox.Location = new System.Drawing.Point(13, 23);
             this.AttachmentBulkCheckBox.Name = "AttachmentBulkCheckBox";
             this.AttachmentBulkCheckBox.Size = new System.Drawing.Size(79, 16);
-            this.AttachmentBulkCheckBox.TabIndex = 4;
+            this.AttachmentBulkCheckBox.TabIndex = 3;
             this.AttachmentBulkCheckBox.Text = "一括チェック";
             this.AttachmentBulkCheckBox.UseVisualStyleBackColor = true;
             this.AttachmentBulkCheckBox.CheckedChanged += new System.EventHandler(this.AttachmentBulkCheckBox_CheckedChanged);
@@ -179,7 +180,7 @@
             this.AttachmentCheckBox.Location = new System.Drawing.Point(10, 45);
             this.AttachmentCheckBox.Name = "AttachmentCheckBox";
             this.AttachmentCheckBox.Size = new System.Drawing.Size(490, 102);
-            this.AttachmentCheckBox.TabIndex = 3;
+            this.AttachmentCheckBox.TabIndex = 4;
             this.AttachmentCheckBox.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.AttachmentCheckBox_ItemCheck);
             // 
             // SendButton
@@ -189,7 +190,7 @@
             this.SendButton.Location = new System.Drawing.Point(357, 490);
             this.SendButton.Name = "SendButton";
             this.SendButton.Size = new System.Drawing.Size(75, 23);
-            this.SendButton.TabIndex = 2;
+            this.SendButton.TabIndex = 5;
             this.SendButton.Text = "送信";
             this.SendButton.UseVisualStyleBackColor = true;
             this.SendButton.Click += new System.EventHandler(this.SendButton_Click);
@@ -200,7 +201,7 @@
             this.CancelButton.Location = new System.Drawing.Point(447, 490);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(75, 23);
-            this.CancelButton.TabIndex = 3;
+            this.CancelButton.TabIndex = 6;
             this.CancelButton.Text = "キャンセル";
             this.CancelButton.UseVisualStyleBackColor = true;
             this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
@@ -215,8 +216,10 @@
             this.Controls.Add(this.SendButton);
             this.Controls.Add(this.AttachmentGroupBox);
             this.Controls.Add(this.SendAdressGroupBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "MainForm";
-            this.Text = "MailChecker";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "MailYoujin";
             this.SendAdressGroupBox.ResumeLayout(false);
             this.SendAdressGroupBox.PerformLayout();
             this.AttachmentGroupBox.ResumeLayout(false);
