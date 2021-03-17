@@ -217,6 +217,8 @@
             this.Controls.Add(this.AttachmentGroupBox);
             this.Controls.Add(this.SendAdressGroupBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "MailYoujin";

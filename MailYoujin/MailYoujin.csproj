@@ -28,16 +28,16 @@
     <AssemblyName>MailYoujin</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <DefineConstants>VSTO40</DefineConstants>
+    <IsWebBootstrapper>False</IsWebBootstrapper>
     <BootstrapperEnabled>true</BootstrapperEnabled>
     <PublishUrl>公開\</PublishUrl>
     <InstallUrl />
     <TargetCulture>ja</TargetCulture>
-    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <ApplicationVersion>1.0.0.1</ApplicationVersion>
     <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateInterval>7</UpdateInterval>
     <UpdateIntervalUnits>days</UpdateIntervalUnits>
-    <IsWebBootstrapper>False</IsWebBootstrapper>
     <ProductName>MailYoujin</ProductName>
     <PublisherName>COMAS</PublisherName>
     <SupportUrl />
@@ -247,8 +247,8 @@
     <VisualStudio>
       <FlavorProperties GUID="{BAA0C2D2-18E2-41B9-852F-F413020CAA33}">
         <ProjectProperties HostName="Outlook" HostPackage="{29A7B9D7-A7F1-4328-8EF0-6B2D1A56B2C1}" OfficeVersion="15.0" VstxVersion="4.0" ApplicationType="Outlook" Language="cs" TemplatesPath="" DebugInfoExeName="#Software\Microsoft\Office\16.0\Outlook\InstallRoot\Path#outlook.exe" AddItemTemplatesGuid="{A58A78EB-1C92-4DDD-80CF-E8BD872ABFC4}" />
-        <Host Name="Outlook" GeneratedCodeNamespace="MailYoujin" IconIndex="0">
-          <HostItem Name="ThisAddIn" Code="MailYoujin.cs" CanonicalName="AddIn" CanActivate="false" IconIndex="1" Blueprint="MailYoujin.Designer.xml" GeneratedCode="MailYoujin.Designer.cs" />
+        <Host Name="Outlook" GeneratedCodeNamespace="MailYoujin" PublishedHash="69C324AB27932AA2FBF2B7EA72250886FF164DE6" IconIndex="0">
+          <HostItem Name="ThisAddIn" Code="MailYoujin.cs" CanonicalName="AddIn" CanActivate="false" IconIndex="1" Blueprint="MailYoujin.Designer.xml" GeneratedCode="MailYoujin.Designer.cs" PublishedHash="3EC6C906CF3F53658DF1E8132ADFA5294E3148AC" />
         </Host>
       </FlavorProperties>
     </VisualStudio>
