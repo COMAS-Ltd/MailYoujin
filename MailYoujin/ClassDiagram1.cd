@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MailYoujin.MailCheckForm" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>ABAgAAAAgCACQAACEKCAKAACACAAAEAAACFBXgAHAAA=</HashCode>
+      <FileName>MailCheckForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MailYoujin.MailYoujin">
+    <Position X="8" Y="0.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>QAAwAACQCBAAEQAgAQAAgFgAAAAAABAQAAgAKAAAACg=</HashCode>
+      <FileName>MailYoujin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MailYoujin.Globals">
+    <Position X="12" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAgAAABAAgAAAAAAIAAAAAAAAAAAgAAAAAADAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MailYoujin.ThisRibbonCollection" Collapsed="true">
+    <Position X="3" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MailYoujin.ThisFormRegionCollection" Collapsed="true">
+    <Position X="0.75" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MailYoujin.WindowFormRegionCollection" Collapsed="true">
+    <Position X="5.25" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MailYoujin.MeetingCheckForm" Collapsed="true">
+    <Position X="0.75" Y="2.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EBAIAAAAECBCRgIAAKCAKAhCAAAGAACAAQEARAIlAAA=</HashCode>
+      <FileName>MeetingCheckForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MailYojin.Properties.Resources" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MailYojin.Properties.Settings" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Yu Gothic UI" Size="9" />
+</ClassDiagram>

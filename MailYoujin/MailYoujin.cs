@@ -22,14 +22,29 @@ namespace MailYoujin
     /// </summary>
     /// <param name="item">送信メールの各アイテム</param>
     /// <param name="isCancel">送信キャンセル判断</param>
-    public void Application_ItemSend(object item, ref bool isCancel)
+    private void Application_ItemSend(object item, ref bool isCancel)
     {
-        MainForm mainForm = new MainForm(item);
+        BaseForm baseForm = null;
+        DialogResult result;
 
         try
         {
-            //モーダルでフォームを表示
-            DialogResult result = mainForm.ShowDialog();
+            //itemのデータ型によって表示するフォームを判定
+            //MailItemの場合はメール確認画面、MeetingItemの場合は会議依頼確認画面とする
+            if (item is Outlook.MailItem)
+            {
+                baseForm = new MailItemSet(item);
+            }
+            else if (item is Outlook.MeetingItem)
+            {
+                baseForm = new MeetingItemSet(item);
+            }
+            else
+            {
+                return;
+            }
+
+            result = baseForm.ShowDialog();
 
             if (DialogResult.OK == result)
             {
@@ -38,13 +53,11 @@ namespace MailYoujin
             else if (DialogResult.Cancel == result)
             {
                 isCancel = true;
-
             }
             else
             {
                 isCancel = true;
             }
-
         }
         catch (System.Exception e)
         {
@@ -53,14 +66,14 @@ namespace MailYoujin
                             "エラー",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Exclamation);
-            if (mainForm != null)
+
+            if (baseForm != null)
             {
-                mainForm.Close();
+                baseForm.Close();
             }
+
             isCancel = true;
-
         }
-
     }
 
     private void ThisAddIn_Shutdown(object sender, System.EventArgs e)
