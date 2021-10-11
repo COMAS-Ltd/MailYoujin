@@ -38,7 +38,7 @@ namespace MailYoujin
         private void ItemSet(Outlook.MeetingItem meetingItem)
         {
             //場所の表示
-            Outlook.AppointmentItem appointmentItem = meetingItem.GetAssociatedAppointment(false);
+            Outlook.AppointmentItem appointmentItem = meetingItem.GetAssociatedAppointment(true);
             String location = String.Empty;
             location = appointmentItem.Location;
             LocationLabel.Text += location;
