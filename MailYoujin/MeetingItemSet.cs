@@ -38,12 +38,13 @@ namespace MailYoujin
         private void ItemSet(Outlook.MeetingItem meetingItem)
         {
             //場所の表示
-            String location = meetingItem.GetAssociatedAppointment(false).Location;
+            Outlook.AppointmentItem appointmentItem = meetingItem.GetAssociatedAppointment(false);
+            String location = String.Empty;
+            location = appointmentItem.Location;
             LocationLabel.Text += location;
-
             //時刻の表示
-            DateTime start  = meetingItem.GetAssociatedAppointment(false).Start;
-            DateTime end    = meetingItem.GetAssociatedAppointment(false).End;
+            DateTime start = appointmentItem.Start;
+            DateTime end = appointmentItem.End;
             TimeLabel.Text += start.ToString("yyyy/MM/dd H:mm") + " ～ " + end.ToString("yyyy/MM/dd H:mm");
         }
         
