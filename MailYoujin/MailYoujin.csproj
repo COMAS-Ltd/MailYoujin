@@ -216,6 +216,7 @@
     </Compile>
     <None Include="App.config" />
     <None Include="ClassDiagram1.cd" />
+    <None Include="MY_comas.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -243,11 +244,10 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>
-    </ManifestKeyFile>
+    <ManifestKeyFile>MY_comas.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>DA0019DADB5FC4BF5C71B0897CBB4FD5471BA850</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>14EF928E7CDE627E634B0F78DCDA50B90A2F170C</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
